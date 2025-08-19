@@ -14,7 +14,7 @@ connectDB()
       console.log("error:", err); //just in case the backend cannot communicate with the db
       throw err;
     });
-    app.listen(port, () => {
+    app.listen(port, "0.0.0.0", () => {
       console.log(`Server is running at port ${port}`);
     });
   })
